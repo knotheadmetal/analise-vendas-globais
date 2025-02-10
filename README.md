@@ -1,93 +1,122 @@
-# Dashboard Analítico de Vendas Globais  
+# Análise de Vendas Globais - Power BI  
 
-Este repositório contém um dashboard analítico desenvolvido em Power BI para explorar métricas relacionadas a vendas globais. A base de dados utilizada, **vendas_globais.csv**, inclui informações sobre vendas, categorias de produtos, países, prioridade de entrega e descontos. O arquivo principal do Power BI, **Dashboard-Vendas-Globais.pbix**, apresenta visualizações interativas para responder perguntas-chave sobre o desempenho das vendas.  
+Este repositório contém um dashboard em Power BI focado na análise de métricas de vendas globais. A base de dados utilizada, **vendas_globais.csv**, oferece informações sobre pedidos, categorias de produtos, prioridade de entrega, descontos e lucros. O arquivo principal do Power BI, **Dashboard-Vendas-Globais.pbix**, apresenta visualizações interativas para explorar insights sobre o desempenho das vendas globais.
 
 ---
 
 ## Objetivo do Projeto  
 
-O dashboard foi projetado para fornecer insights claros e acionáveis sobre o desempenho das vendas globais. Ele responde às seguintes perguntas:  
+Os relatórios estão divididos em 5 visões principais:  
+- **Visão Geral das Vendas**  
+- **Visão por Categoria de Produto**  
+- **Visão por País e Prioridade de Entrega**  
+- **Visão de Descontos por Subcategoria de Produto**  
+- **Visão Geográfica de Média de Valor de Venda**  
 
-1. Qual o valor total vendido?  
-2. Quantas vendas foram realizadas por categoria de produto?  
-3. Quantas vendas foram realizadas por país considerando a prioridade de entrega?  
-4. Qual foi a média de desconto nas vendas por subcategoria de produto?  
-5. Quais países tiveram maior média de valor de venda? Demonstre em um mapa.  
-
-Além disso, o usuário pode filtrar os dados por ano, segmento e país para personalizar as análises conforme necessário.  
+Para cada visão, apresentamos variáveis, gráficos e medidas que fornecem análises completas sobre o valor total vendido, distribuição por categorias, prioridades de entrega e padrões geográficos.
 
 ---
 
-## Recursos Interativos  
+## Objetivos das Análises  
 
-- **Filtros Dinâmicos:**  
-  - **Ano:** Selecione períodos específicos (ex: 2022, 2023).  
-  - **Segmento:** Filtre por tipo de cliente (ex: corporativo, consumidor).  
-  - **País:** Analise dados por região geográfica.  
+- **Monitoramento de Vendas:** Acompanhar o desempenho das vendas ao longo do tempo, identificando tendências sazonais.  
+- **Segmentação por Categoria:** Explorar o desempenho de diferentes categorias de produtos para ajustar estratégias de marketing.  
+- **Análise de Prioridade de Entrega:** Observar como a prioridade de entrega impacta as vendas em diferentes países.  
+- **Avaliação de Descontos:** Analisar o impacto dos descontos nas vendas por subcategoria de produto.  
+- **Mapeamento Geográfico:** Identificar os países com maior média de valor de venda para direcionar esforços comerciais.  
 
-- **Visualizações:**  
-  - Tabelas, gráficos de barras, mapas e gráficos hierárquicos para análise multidimensional.  
+---
+
+## Visões do Dashboard  
+
+### 1. Visão Geral das Vendas  
+**Objetivo:** Proporcionar uma visão consolidada do valor total vendido e da quantidade de vendas.  
+**Métricas Principais:**  
+- Valor Total Vendido: Soma de todas as vendas.  
+- Quantidade de Vendas: Total de unidades vendidas.  
+- Lucro Total: Soma dos lucros gerados.  
+- Filtros: Análise por ano, segmento e país.  
+
+---
+
+### 2. Visão por Categoria de Produto  
+**Objetivo:** Explorar o desempenho das vendas por categoria de produto.  
+**Métricas Principais:**  
+- Valor Total Vendido por Categoria: Distribuição de vendas entre categorias (ex.: Eletrônicos, Luxo).  
+- Ticket Médio por Categoria: Média de valor gasto por transação em cada categoria.  
+- Filtros: Segmentação por região e país.  
+
+---
+
+### 3. Visão por País e Prioridade de Entrega  
+**Objetivo:** Analisar como a prioridade de entrega influencia as vendas em diferentes países.  
+**Métricas Principais:**  
+- Vendas por País: Total de vendas realizadas em cada país.  
+- Distribuição por Prioridade: Percentual de vendas com prioridade alta, média ou baixa.  
+- Países com Maior Volume de Vendas: Ranking dos países com maior número de vendas.  
+
+---
+
+### 4. Visão de Descontos por Subcategoria de Produto  
+**Objetivo:** Avaliar o impacto dos descontos nas vendas por subcategoria de produto.  
+**Métricas Principais:**  
+- Média de Desconto por Subcategoria: Comparação de descontos aplicados em diferentes subcategorias.  
+- Relação entre Desconto e Volume de Vendas: Correlação entre descontos e aumento nas vendas.  
+- Filtros: Análise por categoria e país.  
+
+---
+
+### 5. Visão Geográfica de Média de Valor de Venda  
+**Objetivo:** Mapear os países com maior média de valor de venda.  
+**Métricas Principais:**  
+- Média de Valor de Venda por País: Visualização geográfica dos países com maior ticket médio.  
+- Países Premium: Identificação de mercados com maior valor agregado.  
+- Filtros: Segmentação por ano e categoria.  
+
+---
+
+## Principais Insights de Dados  
+
+| **Insight**                              | **Descrição**                                                                 |
+|------------------------------------------|-------------------------------------------------------------------------------|
+| **Distribuição de Vendas por Categoria** | A categoria **Eletrônicos** liderou em volume de vendas, enquanto a categoria **Luxo** apresentou o maior ticket médio por transação. |
+| **Prioridade de Entrega**                | Países como **Estados Unidos** e **Alemanha** concentraram **60% das vendas com prioridade alta**, indicando uma demanda significativa por entregas rápidas. |
+| **Impacto de Descontos**                 | Subcategorias como **Acessórios Tecnológicos** tiveram uma média de desconto de **12%**, possivelmente para incentivar vendas complementares. |
+| **Países Premium**                       | Os países com maior média de valor de venda foram **Austrália** e **Suíça**, com valores médios superiores a **US$ 1.500 por transação**. |
+| **Tendências Temporais**                 | As vendas aumentaram significativamente no último trimestre de cada ano, sugerindo um impacto positivo das campanhas de fim de ano. |
 
 ---
 
 ## Estrutura do Projeto  
 
-- **Dashboard-Vendas-Globais.pbix:** Arquivo principal do Power BI contendo todas as visualizações e análises.  
-- **vendas_globais.csv:** Base de dados utilizada para gerar as visualizações.  
+- **Dashboard-Vendas-Globais.pbix:** Arquivo principal do Power BI com as 5 visões detalhadas.  
+- **vendas_globais.csv:** Base de dados utilizada para as análises.  
 
 ---
 
 ## Como Utilizar  
 
-1. Clone este repositório:  
+1. **Clone este repositório:**  
    ```bash  
    git clone https://github.com/seu-usuario/dashboard-vendas-globais
-   ```  
+   ```
 
-2. Pré-requisitos:  
+2. **Pré-requisitos:**  
    - Instale o [Power BI Desktop](https://powerbi.microsoft.com/).  
    - Certifique-se de ter acesso ao arquivo **vendas_globais.csv**.  
 
-3. Abrindo o Arquivo:  
+3. **Abrindo o Arquivo:**  
    - Baixe o arquivo **Dashboard-Vendas-Globais.pbix** e abra-o no Power BI Desktop.  
    - Conecte o arquivo **vendas_globais.csv** ao Power BI caso necessário.  
 
-4. Exploração do Dashboard:  
-   - Utilize os filtros disponíveis (ano, segmento e país) para personalizar as análises.  
-   - Explore as visualizações para obter insights sobre as vendas globais.  
-
----
-
-## Principais Insights  
-
-1. **Valor Total de Vendas:**  
-   - O total acumulado é atualizado em tempo real, permitindo comparações históricas.  
-
-2. **Desempenho por Categoria:**  
-   - Categorias como **eletrônicos** lideram em volume, enquanto **luxo** tem maior ticket médio.  
-
-3. **Prioridade de Entrega:**  
-   - 60% das vendas com prioridade **alta** concentram-se em Estados Unidos e Alemanha.  
-
-4. **Média de Desconto:**  
-   - Subcategorias como **acessórios tecnológicos** têm descontos médios de 12%.  
-
-5. **Média de Venda por País:**  
-   - Austrália e Suíça destacam-se com médias superiores a US$ 1.500 por transação.  
-
----
-
-## Acesso ao Dashboard Online  
-
-O relatório interativo está disponível para visualização pública no Power BI:  
-**[Clique aqui para acessar o dashboard](https://app.powerbi.com/view?r=eyJrIjoiMTkwNTk0NTYtNGMzMy00MDFmLWEzM2MtZWY0NmI0YTFiZGQ1IiwidCI6ImYxNDZiYjhhLTBiOTQtNGY1MC1hZmExLTNmYzc4Mjk0MjE1NSJ9)**  
+4. **Exploração do Dashboard:**  
+   - Utilize os filtros e segmentadores para personalizar as análises.  
 
 ---
 
 ## Contribuição  
 
 Contribuições são bem-vindas! Siga os passos abaixo:  
-
 1. Faça um fork deste repositório.  
 2. Crie uma branch com suas alterações:  
    ```bash  
@@ -103,6 +132,6 @@ Contribuições são bem-vindas! Siga os passos abaixo:
 
 ## Contato  
 
-- LinkedIn: [Seu Perfil no LinkedIn](https://www.linkedin.com/in/seu-perfil)  
-- Portfólio: [Seu GitHub](https://github.com/seu-usuario)  
-- E-mail: [seu-email@exemplo.com](mailto:seu-email@exemplo.com)  
+- **LinkedIn:** [Rafael Santos](https://www.linkedin.com/in/rafaelsantosti/)  
+- **Portfólio:** [GitHub](https://github.com/knotheadmetal)  
+- **E-mail:** [rafaelsantosti@outlook.com](mailto:rafaelsantosti@outlook.com)  
