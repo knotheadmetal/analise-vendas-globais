@@ -2,6 +2,8 @@
 
 Este repositório contém um dashboard em Power BI focado na análise de métricas de vendas globais. A base de dados utilizada, **vendas-globais.csv**, oferece informações sobre pedidos, categorias de produtos, prioridade de entrega, descontos e lucros. O arquivo principal do Power BI, **vendas-globais.pbix**, apresenta visualizações interativas para explorar insights sobre o desempenho das vendas globais.
 
+<iframe title="Dashboard de Vendas Globais - Visualização Interativa" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMTkwNTk0NTYtNGMzMy00MDFmLWEzM2MtZWY0NmI0YTFiZGQ1IiwidCI6ImYxNDZiYjhhLTBiOTQtNGY1MC1hZmExLTNmYzc4Mjk0MjE1NSJ9" frameborder="0" allowFullScreen="true"></iframe>
+
 ---
 
 ## Objetivo do Projeto  
